@@ -28,5 +28,5 @@ This section describes how to install the plugin and get it working.
 
 ### Demo ###
 
-[Home Page](https://rajanvijayan.com/contributors/)
-[Contributors View](https://rajanvijayan.com/contributors/2019/11/07/hello-world/)
+1. [Home Page](https://rajanvijayan.com/contributors/)
+2. [Contributors View](https://rajanvijayan.com/contributors/2019/11/07/hello-world/)
