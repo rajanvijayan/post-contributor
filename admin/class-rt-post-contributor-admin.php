@@ -142,6 +142,8 @@ class Rt_Post_Contributor_Admin {
 				foreach( $_POST['meta'] as $key => $value ){
 					update_post_meta( $post_id, $key, $value );
 				}
+			}else{
+				update_post_meta( $post_id, 'contributor', false );
 			}
 		}
 	}

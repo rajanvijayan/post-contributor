@@ -108,14 +108,15 @@ class Rt_Post_Contributor_Public {
 	 */
 	public function insert_contributors_after_post( $content ){
 		if (is_single()) {
-			$content .= '<h3>' .__( 'Contributors' ). '</h3>';
-			
 			$contributors = get_post_meta( get_the_ID(), 'contributor', true );
-			foreach ( $contributors as $user ) { 
-				$content .= '<div class="contributor-box">
-					'. get_avatar( $user ) .'
-					<h4><a href="'.get_author_posts_url( $user ).'">'.get_the_author_meta( 'display_name', $user ).'</a></h4>
-				</div>';
+			if( $contributors ){
+				$content .= '<h3>' .__( 'Contributors' ). '</h3>';
+				foreach ( $contributors as $user ) { 
+					$content .= '<div class="contributor-box">
+						'. get_avatar( $user ) .'
+						<h4><a href="'.get_author_posts_url( $user ).'">'.get_the_author_meta( 'display_name', $user ).'</a></h4>
+					</div>';
+				}
 			}
 		}
 		return $content;
