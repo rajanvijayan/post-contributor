@@ -25,3 +25,8 @@ This section describes how to install the plugin and get it working.
 ### Credits ###
 
 1. [WordPress Plugin Boilerplate](https://wppb.me/)
+
+### Demo ###
+
+[Home Page](https://rajanvijayan.com/contributors/)
+[Contributors View](https://rajanvijayan.com/contributors/2019/11/07/hello-world/)
